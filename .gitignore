@@ -1,0 +1,13 @@
+# Project exclude paths
+/eureka-server/target/
+/eureka-server02/target/
+/eureka-server03/target/
+/microservice-cloud-consumer-dept-feign/target/
+/microservicecloud-api/target/
+/microservicecloud-config-3344/target/
+/microservicecloud-consumer-dept/target/
+/microservicecloud-consumer-hystrix-dashboard-9001/target/
+/microservicecloud-provider-dept/target/
+/microservicecloud-provider-dept8001/target/
+/microservicecloud-provider-dept-hystrix-8001/target/
+/microservicecloud-zuul-gateway-9527/target/

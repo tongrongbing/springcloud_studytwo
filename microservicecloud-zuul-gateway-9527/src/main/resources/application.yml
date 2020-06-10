@@ -1,0 +1,42 @@
+server:
+  port: 9527
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://eureka.server1.com:8083/eureka/,http://eureka.server2.com:8084/eureka/
+  instance:
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    prefer-ip-address: true
+info:
+  app.name: microserviceloud-dept8001
+  build.artifactId: ${project.artifactId}
+  build.version:  ${project.version}
+
+spring:
+  application:
+    name: microservicecloud-zuul-gateway
+
+zuul:
+  prefix: /api
+  ignored-services: "*"
+  routes:
+    dept-service.ServiceId: microserviceloud-dept
+    dept-service.path: /deptService/**
+#比如访问：http://myzuul.com:9527/api/deptService/dept/get/1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+server:
+  port: 8083
+eureka:
+  instance:
+    hostname: eureka.server1.com  #eureka服务端的实例名称eureka.server1.com 在C:\Windows\System32\drivers\etc修改hosts文件
+
+  client:
+    register-with-eureka: false #不注册自己
+    fetch-registry: false #不用去检索服务
+    service-url:
+      defaultZone:  http://eureka.server2.com:8084/eureka/
